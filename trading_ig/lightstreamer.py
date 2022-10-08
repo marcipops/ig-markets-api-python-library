@@ -350,6 +350,7 @@ class LSClient(object):
 # MH Added 6/9/22 ---------------------------------------------------------
 # to fix issue: https://github.com/ig-python/ig-markets-api-python-library/issues/252
             elif message == "": #null string received
+                rebind = True   # to prevent disconnect
                 receive = False
                 log.error("Empty message received")
 # MH Added 6/9/22 ---------------------------------------------------------
